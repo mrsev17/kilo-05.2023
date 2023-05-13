@@ -344,7 +344,7 @@ a {
     box-shadow: none;
 }
 .header__nav-burger-toggler {
-    background-image: url("../assets/header__burger-truck.svg");
+    background-image: url("../assets/banner_bg-low.png");
 }
 .container {
     max-width: 1440px;
