@@ -385,6 +385,81 @@ a {
     background-position: center;
     background-size: cover;
     height: 500px;
+    margin-bottom: 60px;
+}
+/* Styles for Services */
+.services {
+    margin-bottom: 60px;
+}
+.services__wrapper {
+    gap: 36px;
+}
+.services__title > h3 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+.services__line {
+    height: 6px;
+    border-radius: 12px;
+    background-color: #1e88e5;
+    width: 32%;
+    margin: 0 auto;
+}
+.services__description > p {
+    text-align: center;
+    margin: 0 auto;
+    width: 76%;
+    line-height: 34px;
+    font-size: 18px;
+}
+.services__features-card-sub > h4 {
+    padding: 12px 50px 6px;
+    width: 100%;
+    background-color: #1e88e5;
+    color: #f2f7f9;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.services__features-card {
+    gap: 30px;
+}
+
+/* Styles for Solutions */
+
+.solutions {
+    background-image: url("../assets/services__bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.solutions__wrapper {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.solutions__quote-sub {
+    margin-bottom: 30px;
+}
+.solutions__quote-sub > p {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.solutions__quote-btn > a {
+    margin: 0 auto;
+    text-align: center;
+    padding: 16px 0 10px;
+    background-color: #ffd050;
+    color: #0c4068;
+    border-radius: 28px;
+    font-size: 32px;
+    font-weight: 600;
+    max-width: 400px;
+    width: 100%;
 }
 
 /* Movers Styles */
@@ -547,6 +622,9 @@ a {
     .header__nav-list {
         margin-left: 4%;
     }
+    .services__features-card-sub > h4 {
+        padding: 12px 24px 6px;
+    }
 }
 @media (max-width: 1218px) {
     .header__nav-list {
@@ -557,6 +635,9 @@ a {
 @media (max-width: 1200px) {
     .movers__list-part > div {
         width: 32%;
+    }
+    .solutions__quote-btn > a {
+        width: 24%;
     }
 }
 
@@ -581,6 +662,10 @@ a {
         background-position: inherit;
         background-size: cover;
         height: 500px;
+    }
+    .services__features {
+        flex-direction: column;
+        gap: 30px;
     }
 }
 @media (max-width: 992px) {
@@ -621,6 +706,9 @@ a {
     .footer__wrapper {
         padding-bottom: 40px;
     }
+    .solutions__quote-btn > a {
+        width: 44%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -656,5 +744,8 @@ a {
         background-position: inherit;
         background-size: cover;
         height: 400px;
+    }
+    .solutions__quote-btn > a {
+        width: 90%;
     }
 }
