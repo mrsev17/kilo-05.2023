@@ -328,7 +328,8 @@ table {
 * {
     font-family: "Poppins", sans-serif !important;
 }
-nav {
+nav,
+footer {
     background-color: #0c4068 !important;
 }
 a {
@@ -372,6 +373,9 @@ a {
     color: #ffd050;
     transition: 0.5s;
 }
+.header__phone-call-icon {
+    width: 22px;
+}
 
 /* Banner styles */
 
@@ -383,6 +387,79 @@ a {
     height: 500px;
 }
 
+/* Footer Styles */
+
+.footer__left-part {
+    gap: 20px;
+}
+
+.footer__wrapper {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.footer__logo > img {
+    margin-left: -10px;
+    width: 240px;
+}
+.footer__address {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer__address > p {
+    color: #f2f7f9;
+    font-size: 14px;
+}
+
+.footer__phone-icon > img {
+    width: 30px;
+}
+.footer__phone-number > span {
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer__get-quick-quote > a {
+    padding: 12px 24px;
+    background-color: #ffd050;
+    color: #0c4068;
+    border-radius: 28px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer__mid-part {
+    margin-bottom: -100px;
+    gap: 58px;
+}
+.footer__social-networks {
+    width: 100%;
+}
+.footer__icon-soc > img {
+    width: 36px;
+}
+.footer__yellow-line {
+    border-radius: 10px;
+    height: 3px;
+    width: 108px;
+    background-color: #ffd050;
+}
+.footer__right-part {
+    gap: 24px;
+    margin-bottom: -80px;
+}
+.footer__title-posts > h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f2f7f9;
+}
+.footer__list-posts > ul {
+    gap: 20px;
+}
+.footer__list-posts > ul > li > a {
+    text-decoration: underline;
+    font-size: 12px;
+}
 /* Media Queries */
 
 @media (max-width: 1290px) {
@@ -428,6 +505,27 @@ a {
     }
     .header__panel-btn-call {
         justify-content: space-between;
+    }
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .footer__right-part,
+    .footer__mid-part {
+        margin-bottom: 0;
+    }
+    .footer__left-part {
+        gap: 30px;
+    }
+    .footer__address > p {
+        text-align: center;
+    }
+    .footer__logo > img {
+        margin-left: 0;
+    }
+    .footer__wrapper {
+        padding-bottom: 40px;
     }
 }
 
