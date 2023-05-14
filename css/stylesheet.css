@@ -500,20 +500,66 @@ a {
 }
 .banner__title > h1 > span {
     color: #1e88e5;
+    position: relative;
+    animation: slide-in 2s ease-in-out;
 }
 
 /* Logos styles */
 
 .logos {
     background-color: #f2f7f9;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 .logos__wrapper {
     width: 50%;
     margin-top: 26px;
     margin-bottom: 20px;
 }
+/* Styles for about */
 
+.about__left-part,
+.about__right-part {
+    width: 50%;
+}
+.about__right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about {
+    background-image: url("../assets/about-half-square.png");
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+.about__wrapper {
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+.about__title > h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+.about__line {
+    background-color: #1e88e5;
+    height: 6px;
+    max-width: 300px;
+    border-radius: 20px;
+}
+.about__text > p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.about__sub-line {
+    height: 100%;
+    width: 4px;
+    border-radius: 20px;
+    background-color: rgb(242, 157, 57);
+}
+.about__sub-text > h3 {
+    font-weight: 700;
+    color: #0c4068;
+    line-height: 24px;
+}
 /* Styles for feedback */
 
 .feedback {
@@ -576,6 +622,7 @@ a {
 }
 
 /* Styles for Services */
+
 .services {
     margin-bottom: 60px;
 }
@@ -858,6 +905,34 @@ a {
         flex-direction: column;
         gap: 30px;
     }
+    .about__wrapper {
+        flex-direction: column;
+        gap: 90px;
+    }
+    .about__left-part,
+    .about__right-part {
+        width: 100%;
+    }
+    .about__left-part {
+        display: flex;
+        justify-content: center;
+    }
+    .about__right-part {
+        gap: 20px;
+    }
+    .about__title > h2 {
+        text-align: center;
+    }
+    .about__text > p,
+    .about__sub-text > h3 {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .about__line {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 992px) {
     .header {
@@ -898,7 +973,7 @@ a {
         text-align: center;
     }
     .logos {
-        margin-bottom: 150px;
+        margin-bottom: 220px;
     }
     .movers__list-part {
         flex-direction: column;
@@ -1005,6 +1080,17 @@ a {
     }
     .solutions__quote-btn > a {
         width: 90%;
+    }
+    .about__left-part > img {
+        width: 80%;
+    }
+    .about__wrapper {
+        margin-top: 120px;
+        gap: 140px;
+        margin-bottom: 0;
+    }
+    .about {
+        background-size: contain;
     }
     .feedback__wrapper {
         margin-top: 40px;
