@@ -527,9 +527,20 @@ a {
     justify-content: space-around;
 }
 .about {
-    background-image: url("../assets/about-half-square.png");
-    background-repeat: no-repeat;
+    /* background-image: url("../assets/about-half-square.png");
+    background-repeat: no-repeat; */
     margin-bottom: 40px;
+}
+.about__left-part {
+    background-image: url("../assets/about-square.png");
+    background-repeat: no-repeat;
+    background-position: 25% 25%;
+    background-size: 86%;
+}
+.about__left-part > img {
+    margin-top: 6px;
+    margin-left: 42px;
+    width: 80%;
 }
 .about__wrapper {
     margin-bottom: 70px;
