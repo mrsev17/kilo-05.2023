@@ -1078,6 +1078,9 @@ a {
     }
 }
 @media (max-width: 992px) {
+    .about__left-part > img {
+        margin-top: 0;
+    }
     .header {
         background-color: #0c4068;
     }
@@ -1239,10 +1242,10 @@ a {
         background-position: inherit;
         background-size: cover;
         height: 400px;
-        margin-bottom: 560px;
+        margin-bottom: 580px;
     }
     .logos {
-        margin-bottom: 0;
+        margin-bottom: 48px;
     }
     .logos__wrapper {
         width: 100%;
@@ -1298,5 +1301,11 @@ a {
     }
     .about__left-part > img {
         margin-top: -78px;
+    }
+}
+
+@media (max-width: 380px) {
+    .banner {
+        margin-bottom: 710px;
     }
 }
