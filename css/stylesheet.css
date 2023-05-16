@@ -1273,7 +1273,7 @@ a {
         margin-top: -62px;
     }
     .about__wrapper {
-        margin-top: 160px;
+        margin-top: 180px;
         gap: 160px;
         margin-bottom: 0;
     }
@@ -1295,5 +1295,8 @@ a {
 @media (max-width: 406px) {
     .banner {
         margin-bottom: 660px;
+    }
+    .about__left-part > img {
+        margin-top: -78px;
     }
 }
