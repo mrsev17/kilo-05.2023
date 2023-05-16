@@ -83,7 +83,7 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    /* font: inherit; */
     vertical-align: baseline;
 }
 
@@ -348,8 +348,8 @@ a {
 }
 .container {
     max-width: 1440px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 .header__nav-list {
     margin-left: 10%;
@@ -457,14 +457,18 @@ a {
 .banner__calculate-submit {
     text-align: center;
 }
+.banner__date-moving-wrapper,
+.banner__submit-btn {
+    margin: 0 auto 38px !important;
+}
 .banner__calculate-submit > button {
     border: none;
     background-color: #ffd050;
     font-size: 24px;
     font-weight: 600;
     color: #0c4068;
-    padding: 12px 18px 8px;
-    border-radius: 20px;
+    padding: 20px 18px 16px;
+    border-radius: 30px;
 }
 .banner__left-part,
 .banner__right-part {
@@ -478,6 +482,7 @@ a {
     height: 500px;
 }
 .banner__title {
+    margin-top: -160px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -486,6 +491,7 @@ a {
     display: flex;
     justify-content: center;
 }
+
 .banner__title > h1 {
     color: white;
     font-size: 50px;
@@ -515,8 +521,20 @@ a {
     margin-top: 26px;
     margin-bottom: 20px;
 }
+.logo__case-three > img {
+    width: 120px;
+}
+.logo__case-two > img {
+    width: 200px;
+}
+.logo__case > img {
+    width: 180px;
+}
 /* Styles for about */
-
+.about__left-part > img {
+    height: 90%;
+    margin-top: 12px;
+}
 .about__left-part,
 .about__right-part {
     width: 50%;
@@ -531,17 +549,7 @@ a {
     background-repeat: no-repeat;
     margin-bottom: 40px;
 }
-.about__left-part {
-    /* background-image: url("../assets/about-square.png");
-    background-repeat: no-repeat;
-    background-position: 25% 25%;
-    background-size: 86%; */
-}
-/* .about__left-part > img {
-    margin-top: 6px;
-    margin-left: 42px;
-    width: 80%;
-} */
+
 .about__wrapper {
     margin-bottom: 70px;
     margin-top: 50px;
@@ -552,7 +560,7 @@ a {
 }
 .about__line {
     background-color: #1e88e5;
-    height: 6px;
+    height: 8px;
     max-width: 300px;
     border-radius: 20px;
 }
@@ -570,6 +578,7 @@ a {
     font-weight: 700;
     color: #0c4068;
     line-height: 24px;
+    font-size: 22px;
 }
 /* Styles for feedback */
 
@@ -618,7 +627,7 @@ a {
     align-items: center;
     justify-content: center;
     height: 100vh;
-
+    position: relative;
     border-radius: 50%;
     height: 220px;
     width: 220px;
@@ -627,11 +636,16 @@ a {
 }
 .feedback__nest-content-avatar {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    background-color: #0c4068;
-}
 
+    /* height: 200px;
+    width: 200px;
+    background-color: #0c4068; */
+}
+.feedback__nest-content-avatar > img {
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: -4px;
+}
 /* Styles for Services */
 
 .services {
@@ -648,7 +662,7 @@ a {
 }
 .feedback__line,
 .services__line {
-    height: 6px;
+    height: 8px;
     border-radius: 12px;
     background-color: #1e88e5;
     width: 32%;
@@ -663,13 +677,16 @@ a {
     font-size: 18px;
 }
 .services__features-card-sub > h4 {
-    padding: 12px 50px 6px;
-    width: 100%;
+    padding: 20px 0px 14px;
+    /* max-width: 110%; */
+    /* width: 100%; */
+    width: 260px;
+    text-align: center;
     background-color: #1e88e5;
     color: #f2f7f9;
     font-size: 24px;
     font-weight: 600;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .services__features-card {
@@ -707,7 +724,7 @@ a {
     border-radius: 28px;
     font-size: 32px;
     font-weight: 600;
-    max-width: 400px;
+    max-width: 340px;
     width: 100%;
 }
 
@@ -762,11 +779,12 @@ a {
 }
 .movers__list-btn {
     border-radius: 50%;
-    padding: 10px;
+    padding: 7px;
     background-color: #bac1c7;
 }
-.movers__list-btn > svg {
-    fill: #1e88e5;
+.movers__list-btn > img {
+    width: 26px;
+    margin: 4px 4px 0;
 }
 
 .movers__list-left,
@@ -826,12 +844,12 @@ a {
     font-weight: 500;
 }
 .footer__get-quick-quote > a {
-    padding: 12px 24px;
+    padding: 12px 24px 8px;
     background-color: #ffd050;
     color: #0c4068;
     border-radius: 28px;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
 }
 .footer__mid-part {
     margin-bottom: -100px;
@@ -845,7 +863,7 @@ a {
 }
 .footer__yellow-line {
     border-radius: 10px;
-    height: 3px;
+    height: 4px;
     width: 108px;
     background-color: #ffd050;
 }
@@ -867,6 +885,30 @@ a {
 }
 /* Media Queries */
 
+@media (min-width: 1680px) {
+    .about {
+        background-image: none;
+    }
+    .about__left-part {
+        background-image: url("../assets/about-half-square.png");
+        background-repeat: no-repeat;
+        background-position: 0 20%;
+        background-size: contain;
+    }
+    .about__left-part > img {
+        margin-top: 34px;
+    }
+}
+@media (min-width: 1280px) {
+    .banner__title,
+    .banner__text {
+        margin-left: -60px;
+    }
+    .banner__calculate-form {
+        margin-right: -38%;
+    }
+}
+
 @media (max-width: 1290px) {
     .header__nav-list {
         margin-left: 4%;
@@ -875,6 +917,7 @@ a {
         padding: 12px 24px 6px;
     }
 }
+
 @media (max-width: 1218px) {
     .header__nav-list {
         margin-left: 0;
@@ -1070,7 +1113,7 @@ a {
         background-position: inherit;
         background-size: cover;
         height: 400px;
-        margin-bottom: 540px;
+        margin-bottom: 560px;
     }
     .logos {
         margin-bottom: 0;
@@ -1117,6 +1160,6 @@ a {
 
 @media (max-width: 406px) {
     .banner {
-        margin-bottom: 620px;
+        margin-bottom: 660px;
     }
 }
