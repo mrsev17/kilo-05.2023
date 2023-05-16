@@ -624,7 +624,7 @@ a {
     height: 100%;
     width: 8px;
     border-radius: 20px;
-    background-color: rgb(242, 157, 57);
+    background-color: #ffd050;
 }
 .about__sub-text > h3 {
     font-weight: 700;
