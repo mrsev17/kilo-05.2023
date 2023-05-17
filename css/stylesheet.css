@@ -844,7 +844,7 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
     border-radius: 8px;
-    padding: 14px 18px 12px;
+    padding: 16px 18px 14px;
 }
 .movers__list-name > h3 {
     font-size: 24px;
@@ -1005,6 +1005,9 @@ a {
     }
     .services__features-card-sub > h4 {
         padding: 12px 24px 6px;
+    }
+    .about__left-part > img {
+        height: 96%;
     }
 }
 
