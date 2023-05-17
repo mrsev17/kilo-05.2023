@@ -1265,7 +1265,7 @@ a {
         background-position: inherit;
         background-size: cover;
         height: 400px;
-        margin-bottom: 530px;
+        margin-bottom: 550px;
     }
     .banner__title {
         margin-top: 24px;
@@ -1275,6 +1275,9 @@ a {
     }
     .banner__calculate-form {
         margin-top: 26px;
+    }
+    .banner__calculate-sub > p {
+        font-size: 16px;
     }
     .logos {
         margin-bottom: 0;
@@ -1306,8 +1309,6 @@ a {
     .banner__calculate-sub {
         max-width: 90%;
     }
-    .banner__calculate-sub > p {
-    }
     .solutions__quote-btn > a {
         width: 90%;
     }
@@ -1317,7 +1318,7 @@ a {
     }
     .about__wrapper {
         margin-top: 100px;
-        gap: 80px;
+        gap: 40px;
         margin-bottom: 0;
     }
     .about {
