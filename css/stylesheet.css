@@ -1214,6 +1214,11 @@ a {
     }
 }
 @media (max-width: 992px) {
+    .movers__list-left,
+    .movers__list-mid,
+    .movers__list-right {
+        gap: 16px;
+    }
     .accordion-list-link {
         gap: 16px;
     }
