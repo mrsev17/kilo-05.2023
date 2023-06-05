@@ -1,25 +1,5 @@
 "use strict";
 
-// Datepicker //
-
-// $(function () {
-//     const today = new Date();
-//     const minDate = new Date(
-//         today.getFullYear(),
-//         today.getMonth(),
-//         today.getDate() + 7
-//     );
-
-//     $("#datepicker")
-//         .datepicker({
-//             minDate: minDate,
-//             dateFormat: "dd/mm/yy",
-//             dayNamesMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-//         })
-//         .datepicker("setDate", minDate);
-
-// });
-
 $(function () {
     const today = new Date();
     const minDate = new Date(
@@ -35,10 +15,7 @@ $(function () {
             dayNamesMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
             beforeShow: function (input, inst) {
                 setTimeout(function () {
-                    // Calculate the position of the input
-                    var inputOffset = $(input).offset();
-
-                    // Set the position of the datepicker calendar
+                    const inputOffset = $(input).offset();
                     inst.dpDiv.css({
                         top: inputOffset.top + $(input).outerHeight(),
                         left: inputOffset.left,
