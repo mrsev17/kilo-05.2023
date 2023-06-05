@@ -129,7 +129,7 @@
                                         <p>Try our free and easy-to-use cost calculator</p>
                                     </div>
                                     <div class="banner__form-container">
-                                        <form>
+                                        <form novalidate>
                                             <div class="d-flex flex-column">
                                                 <label class="banner__calculate-label" for="name">Where are you moving from?</label>
                                                 <input class="banner__input" type="text" id="name" name="name" required placeholder="City, State or ZIP Code">
@@ -142,14 +142,33 @@
                                        
                                     <div class="d-flex flex-column">
                                         <label class="banner__calculate-label" for="phone">What are you moving?</label>
-                                        <input class="banner__input" type="text" id="phone" name="phone" required placeholder="A few boxes">
+
+                                        <!-- <input class="banner__input" type="text" id="phone" name="phone" required placeholder="A few boxes"> -->
+                                        <div class="dropdown">
+                                            <button class="banner__btn-moving-dropdown btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Select option
+                                            </button>
+                                            <ul class="banner__btn-moving-dropdown-list dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                              <li><button class="dropdown-item" href="#" onclick="selectOption('A few boxes')">A few boxes</button></li>
+                                              <li><button class="dropdown-item" href="#" onclick="selectOption('Studio apartment<')">Studio apartment</button></li>
+                                              <li><button class="dropdown-item" href="#" onclick="selectOption('1 bedroom residence')">1 bedroom residence</button></li>
+                                              <li><button class="dropdown-item" href="#" onclick="selectOption('2 bedroom residence')">2 bedroom residence </button></li>
+                                              <li><button class="dropdown-item" href="#" onclick="selectOption('3 bedroom residence')">3 bedroom residence </button></li>
+                                              <li><button class="dropdown-item" href="#" onclick="selectOption('4 bedroom residence')">4 bedroom residence </button></li>
+                                              <li><button class="dropdown-item" href="#" onclick="selectOption('5 bedroom residence')">5 bedroom residence </button></li>
+                                            </ul>
+                                          </div>
+                                          
+                                          
+                                          
+
                                     </div>
                                           
                                     <div class="d-flex flex-column banner__date-moving-wrapper datepicker">
                                         <label class="banner__calculate-label" for="message">When are you moving?</label>
                                         <input type="text" id="datepicker" autocomplete="no">
                                     </div>
-                                    
+
                                           <div class="banner__calculate-submit banner__submit-btn">
                                             <button>CALCULATE MY MOVE</button>
                                           </div>

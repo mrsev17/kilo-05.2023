@@ -340,7 +340,7 @@ a {
 /* Datepicker styles */
 
 .datepicker input {
-    padding-left: 12px;
+    padding-left: 16px;
 }
 
 /* Style the datepicker container */
@@ -412,6 +412,60 @@ a {
     border-radius: 50% !important;
 }
 /* ==================== */
+
+/* Dropdown input */
+
+.banner__btn-moving-dropdown {
+    width: 100%;
+    padding: 16px 20px 13px;
+    color: #000000;
+    background-color: #eaeaea;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: left;
+}
+.banner__btn-moving-dropdown::after {
+    display: none;
+}
+.banner__btn-moving-dropdown:active,
+.banner__btn-moving-dropdown:hover,
+.banner__btn-moving-dropdown:focus-visible,
+.btn.show {
+    background-color: #eaeaea !important;
+    color: #000000 !important;
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+
+.banner__btn-moving-dropdown-list {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f2f7f9;
+    margin-top: 10px !important;
+    margin-left: -1px !important;
+    width: 100.6%;
+    border: 1px solid transparent;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 16px 16px;
+    gap: 8px;
+}
+.banner__btn-moving-dropdown-list > li > button {
+    font-size: 18px;
+    line-height: 23px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.banner__btn-moving-dropdown-list > li > button:hover {
+    background-color: #eaeaea;
+}
+.banner__btn-moving-dropdown-list li:last-child button:hover {
+    background-color: #eaeaea;
+    border-radius: 0px 0px 16px 16px;
+}
+
+/* = = = = = = =  */
 
 .navbar-toggler {
     padding: 6px 12px 2px 12px;
@@ -1471,7 +1525,6 @@ a {
 }
 
 @media (max-width: 568px) {
-    
     /* Datepicker */
 
     .ui-datepicker {

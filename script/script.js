@@ -18,3 +18,12 @@ $(function () {
         })
         .datepicker("setDate", minDate);
 });
+
+// Dropdown //
+
+function selectOption(option) {
+    const dropdownButton = document.getElementById("dropdownMenuButton");
+    dropdownButton.innerHTML = option;
+}
+
+
