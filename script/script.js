@@ -21,9 +21,8 @@ $(function () {
 
 // Dropdown //
 
-function selectOption(option) {
+function selectOption(event, option) {
+    event.preventDefault();
     const dropdownButton = document.getElementById("dropdownMenuButton");
     dropdownButton.innerHTML = option;
 }
-
-
