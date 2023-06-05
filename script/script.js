@@ -25,3 +25,9 @@ function selectOption(option) {
     const dropdownButton = document.getElementById("dropdownMenuButton");
     dropdownButton.innerHTML = option;
 }
+
+document
+    .getElementById("banner__form")
+    .addEventListener("submit", function (e) {
+        e.preventDefault();
+    });
