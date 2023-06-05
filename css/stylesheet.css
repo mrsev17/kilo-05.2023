@@ -336,6 +336,83 @@ a {
     text-decoration: none;
     color: #f2f7f9;
 }
+
+/* Datepicker styles */
+
+.datepicker input {
+    padding-left: 12px;
+}
+
+/* Style the datepicker container */
+.ui-datepicker {
+    background-color: #f2f7f9;
+    border: none !important;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 14px;
+    font-family: Arial, sans-serif;
+    max-width: 412px;
+    width: 100%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.ui-datepicker-week-end {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+}
+.ui-state-default {
+    padding: 18px 12px 14px !important;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+/* Style the datepicker header */
+
+.ui-datepicker-header {
+    background-color: #f2f7f9;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.ui-datepicker-prev span {
+    background-image: url("../assets/arrow-prev.svg");
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.ui-datepicker-next span {
+    background-image: url("../assets/arrow-next.svg") !important;
+    background-size: 100% 100%;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+.ui-icon-circle-triangle-w,
+.ui-icon-circle-triangle-e {
+    background-position: 0px 0px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+    background-image: url("../assets/arrow-prev.svg");
+}
+
+.ui-datepicker-calendar td {
+    padding: 0;
+}
+
+.ui-state-active,
+.ui-state-hover {
+    background-color: #1e88e5 !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+}
+/* ==================== */
+
 .navbar-toggler {
     padding: 6px 12px 2px 12px;
     border: 1px solid rgb(242, 157, 57);
@@ -1394,6 +1471,16 @@ a {
 }
 
 @media (max-width: 568px) {
+    
+    /* Datepicker */
+
+    .ui-datepicker {
+        margin-left: -8px;
+        width: 96%;
+    }
+
+    /* = = = = = */
+
     .banner {
         background-repeat: no-repeat;
         background-position: inherit;
