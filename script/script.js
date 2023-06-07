@@ -27,6 +27,18 @@
 //         .datepicker("setDate", minDate);
 // });
 
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+// Apply Safari-specific styles if the browser is Safari
+if (isSafari) {
+    const elements = document.querySelectorAll(
+        ".rectangle-home, .rectangle-moving-companies, .rectangle-reviews, .rectangle-cost-calculator, .rectangle-about-us"
+    );
+    elements.forEach(function (element) {
+        element.style.top = "174%";
+    });
+}
+
 $(function () {
     const today = new Date();
     const minDate = new Date(
