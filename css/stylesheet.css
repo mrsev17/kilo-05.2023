@@ -336,7 +336,7 @@ a {
     text-decoration: none;
     color: #f2f7f9;
 }
-.nav-item {
+.nav-item-desktop {
     position: relative;
 }
 /* Datepicker styles */
@@ -471,6 +471,65 @@ a {
 }
 
 /* = = = = = = =  */
+
+/* Accordion from burger menu */
+
+.header__accordion-mobile {
+    display: none;
+}
+.accordion-item-header {
+    background-color: #0c4068 !important;
+    border: none !important;
+}
+.accordion-item-header > button {
+    color: #ffffff !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    font-weight: 400 !important;
+    padding-bottom: 0 !important;
+}
+.accordion-header-nest-list {
+    gap: 10px;
+}
+.accordion-header-nest-list > li > a {
+    font-size: 17px;
+    line-height: 26px;
+    transition: ease-in-out 0.5s;
+}
+.accordion-header-nest-list > li > a:hover {
+    transition: 0.5s;
+    color: #ffd050;
+}
+.accordion-body-header {
+    padding-left: 40px;
+}
+
+.accordion-button-header::after {
+    padding: 18px;
+    padding-right: 0;
+    -webkit-transform: scale(0.6) rotate(0deg) !important;
+    -ms-transform: scale(0.6) rotate(0deg) !important;
+    transform: scale(0.6) rotate(0deg) !important;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url("../assets/Icon-accordion-header.svg") !important;
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    -webkit-transition: var(--bs-accordion-btn-icon-transition);
+    -o-transition: var(--bs-accordion-btn-icon-transition);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+.accordion-button-header:not(.collapsed)::after {
+    background-image: url("../assets/Icon-accordion-header.svg") !important;
+    -webkit-transform: rotate(-90deg) scale(0.6) !important;
+    -ms-transform: rotate(-90deg) scale(0.6) !important;
+    transform: rotate(-90deg) scale(0.6) !important;
+}
+/* =========== */
 
 .navbar-toggler {
     padding: 6px 12px 2px 12px;
@@ -1167,7 +1226,7 @@ a {
     gap: 40px;
 }
 
-/* Accordeon */
+/* Accordion */
 
 .accordion {
     --bs-accordion-color: var(--bs-body-color);
@@ -1537,6 +1596,13 @@ a {
     }
 }
 @media (max-width: 992px) {
+    .header__accordion-mobile {
+        display: block;
+    }
+    .desktop-form,
+    .nav-item-desktop {
+        display: none !important;
+    }
     .header__btn-navigation:hover + .rectangle-home {
         opacity: 0;
         -webkit-transform: translateX(-50%) scaleX(1);
