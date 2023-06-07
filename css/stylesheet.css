@@ -593,7 +593,7 @@ a {
 .menu-home {
     border-top: 1px solid #ffd050;
     background-color: #0c4068;
-    position: absolute;
+    /* position: absolute; */
     top: 70px;
     left: 0;
     z-index: 2;
