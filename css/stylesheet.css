@@ -599,6 +599,21 @@ a {
     z-index: 2;
     width: 100%;
     display: none;
+    overflow: hidden;
+}
+@keyframes animationForBlockMenuHome {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 333px;
+    }
+}
+
+.open {
+    animation-name: animationForBlockMenuHome;
+    animation-duration: 3s;
+    animation-timing-function: ease;
 }
 .block1 {
     background-color: blue;

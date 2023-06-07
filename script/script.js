@@ -130,6 +130,7 @@ function showBlock(buttonElement, blockElement, rectangleElement) {
 
     buttonElement.classList.add("active");
     blockElement.style.display = "block";
+    blockElement.classList.add("open");
     rectangleElement.classList.add("active-rectangle");
     activeBlock = {
         button: buttonElement,
@@ -147,6 +148,7 @@ function handleMouseOver(buttonElement, blockElement, rectangleElement) {
 function handleMouseOut(buttonElement, blockElement, rectangleElement) {
     blockElement.addEventListener("mouseleave", function () {
         blockElement.style.display = "none";
+        blockElement.classList.remove("open");
         buttonElement.classList.remove("active");
         rectangleElement.classList.remove("active-rectangle");
         activeBlock = null;
