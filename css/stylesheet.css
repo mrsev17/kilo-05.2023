@@ -601,8 +601,12 @@ a {
 }
 @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance: none) {
+        .rectangle-home,
+        .rectangle-moving-companies,
+        .rectangle-reviews,
+        .rectangle-cost-calculator,
         .rectangle-about-us {
-            top: 174%;
+            top: 174% !important;
         }
     }
 }
