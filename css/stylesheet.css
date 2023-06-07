@@ -600,8 +600,9 @@ a {
     width: 100%;
     display: none;
     overflow: hidden;
+    height: 333px;
 }
-@keyframes animationForBlockMenuHome {
+/* @keyframes animationForBlockMenuHome {
     0% {
         height: 0px;
     }
@@ -610,10 +611,25 @@ a {
     }
 }
 
-.open {
+.open-wrapper {
     animation-name: animationForBlockMenuHome;
     animation-duration: 3s;
     animation-timing-function: ease;
+    height: 333px !important;
+} */
+.wrapper-tabs-menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.75s ease;
+}
+.collapsed-tabs-menu {
+    transition: height 0.75s;
+    height: 0 !important;
+    background-color: #0c4068;
+}
+.expanded-tabs-menu {
+    background-color: #0c4068 !important;
+    height: 333px !important;
 }
 .block1 {
     background-color: blue;
