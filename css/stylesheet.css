@@ -355,6 +355,7 @@ a {
     font-family: Arial, sans-serif;
     max-width: 412px;
     width: 100%;
+    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
 }
 .ui-datepicker-week-end {
@@ -438,6 +439,7 @@ a {
     background-color: #eaeaea !important;
     color: #000000 !important;
     border: 1px solid transparent !important;
+    -webkit-box-shadow: none !important;
     box-shadow: none !important;
 }
 
@@ -449,6 +451,7 @@ a {
     margin-left: -1px !important;
     width: 100.6%;
     border: 1px solid transparent;
+    -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 16px 16px;
     gap: 8px;
@@ -571,6 +574,8 @@ a {
     color: white;
     font-size: 18px;
     line-height: 27px;
+    -webkit-transition: 0.7s ease-in-out;
+    -o-transition: 0.7s ease-in-out;
     transition: 0.7s ease-in-out;
 }
 .rectangle-home,
@@ -581,12 +586,18 @@ a {
     position: absolute;
     top: 196%;
     left: 50%;
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -ms-transform: translateX(-50%) scaleX(0);
     transform: translateX(-50%) scaleX(0);
     height: 6px;
     background-color: #ffd050;
     border-radius: 8px 8px 0 0;
     opacity: 0;
+    -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+    transition: opacity 0.6s, -webkit-transform 0.6s;
+    -o-transition: transform 0.6s, opacity 0.6s;
     transition: transform 0.6s, opacity 0.6s;
+    transition: transform 0.6s, opacity 0.6s, -webkit-transform 0.6s;
 }
 
 .rectangle-home {
@@ -606,29 +617,43 @@ a {
 }
 .header__btn-navigation:hover + .rectangle-home {
     opacity: 1;
+    -webkit-transform: translateX(-50%) scaleX(1);
+    -ms-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
 .header__btn-navigation:hover + .rectangle-moving-companies {
     opacity: 1;
+    -webkit-transform: translateX(-50%) scaleX(1);
+    -ms-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
 .header__btn-navigation:hover + .rectangle-reviews {
     opacity: 1;
+    -webkit-transform: translateX(-50%) scaleX(1);
+    -ms-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
 .header__btn-navigation:hover + .rectangle-cost-calculator {
     opacity: 1;
+    -webkit-transform: translateX(-50%) scaleX(1);
+    -ms-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
 .header__btn-navigation:hover + .rectangle-about-us {
     opacity: 1;
+    -webkit-transform: translateX(-50%) scaleX(1);
+    -ms-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
 .active-rectangle {
     opacity: 1;
+    -webkit-transform: translateX(-50%) scaleX(1);
+    -ms-transform: translateX(-50%) scaleX(1);
     transform: translateX(-50%) scaleX(1);
 }
 .menu-home__list-links:hover {
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
     color: #ffd050;
 }
@@ -1173,6 +1198,7 @@ a {
 .accordion-button:not(.collapsed) {
     color: none;
     background-color: var(--bs-accordion-active-bg);
+    -webkit-box-shadow: none;
     box-shadow: none;
 }
 .accordion-list-link {
@@ -1181,12 +1207,16 @@ a {
 .accordion-list-link > li > a {
     font-size: 15px;
     color: #234068 !important;
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
     line-height: 18px;
 }
 .accordion-list-link > li > a:hover {
     color: #0f81e6 !important;
     text-decoration: underline;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .accordion-header {
@@ -1204,7 +1234,10 @@ a {
 }
 
 .accordion-button::after {
+    -webkit-transform: scale(1.5) rotate(90deg);
+    -ms-transform: scale(1.5) rotate(90deg);
     transform: scale(1.5) rotate(90deg);
+    -ms-flex-negative: 0;
     flex-shrink: 0;
     width: var(--bs-accordion-btn-icon-width);
     height: var(--bs-accordion-btn-icon-width);
@@ -1213,59 +1246,87 @@ a {
     background-image: url("../assets/arrow.svg");
     background-repeat: no-repeat;
     background-size: var(--bs-accordion-btn-icon-width);
+    -webkit-transition: var(--bs-accordion-btn-icon-transition);
+    -o-transition: var(--bs-accordion-btn-icon-transition);
     transition: var(--bs-accordion-btn-icon-transition);
 }
 .accordion-button:not(.collapsed)::after {
     background-image: url("../assets/arrow.svg");
+    -webkit-transform: rotate(-90deg) scale(1.5);
+    -ms-transform: rotate(-90deg) scale(1.5);
     transform: rotate(-90deg) scale(1.5);
 }
 .fade-in-list li {
     opacity: 0;
+    -webkit-animation: fade-in 1.5s ease forwards;
     animation: fade-in 1.5s ease forwards;
 }
 
 /* Change code below, depended from quantity of links */
 
 .fade-in-list li:nth-child(1) {
+    -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
 
 .fade-in-list li:nth-child(2) {
+    -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
 
 .fade-in-list li:nth-child(3) {
+    -webkit-animation-delay: 0.6s;
     animation-delay: 0.6s;
 }
 .fade-in-list li:nth-child(4) {
+    -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
 }
 
 .fade-in-list li:nth-child(5) {
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
 .fade-in-list li:nth-child(6) {
+    -webkit-animation-delay: 1.2s;
     animation-delay: 1.2s;
 }
 .fade-in-list li:nth-child(7) {
+    -webkit-animation-delay: 1.4s;
     animation-delay: 1.4s;
 }
 
 .fade-in-list li:nth-child(8) {
+    -webkit-animation-delay: 1.6s;
     animation-delay: 1.6s;
 }
 
 .fade-in-list li:nth-child(9) {
+    -webkit-animation-delay: 1.8s;
     animation-delay: 1.8s;
 }
-@keyframes fade-in {
+@-webkit-keyframes fade-in {
     from {
         opacity: 0;
+        -webkit-transform: translateY(10px);
         transform: translateY(10px);
     }
     to {
         opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 }
@@ -1467,22 +1528,32 @@ a {
 @media (max-width: 992px) {
     .header__btn-navigation:hover + .rectangle-home {
         opacity: 0;
+        -webkit-transform: translateX(-50%) scaleX(1);
+        -ms-transform: translateX(-50%) scaleX(1);
         transform: translateX(-50%) scaleX(1);
     }
     .header__btn-navigation:hover + .rectangle-moving-companies {
         opacity: 0;
+        -webkit-transform: translateX(-50%) scaleX(1);
+        -ms-transform: translateX(-50%) scaleX(1);
         transform: translateX(-50%) scaleX(1);
     }
     .header__btn-navigation:hover + .rectangle-reviews {
         opacity: 0;
+        -webkit-transform: translateX(-50%) scaleX(1);
+        -ms-transform: translateX(-50%) scaleX(1);
         transform: translateX(-50%) scaleX(1);
     }
     .header__btn-navigation:hover + .rectangle-cost-calculator {
         opacity: 0;
+        -webkit-transform: translateX(-50%) scaleX(1);
+        -ms-transform: translateX(-50%) scaleX(1);
         transform: translateX(-50%) scaleX(1);
     }
     .header__btn-navigation:hover + .rectangle-about-us {
         opacity: 0;
+        -webkit-transform: translateX(-50%) scaleX(1);
+        -ms-transform: translateX(-50%) scaleX(1);
         transform: translateX(-50%) scaleX(1);
     }
     .movers__list-left,
