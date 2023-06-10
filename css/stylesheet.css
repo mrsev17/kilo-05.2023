@@ -837,6 +837,7 @@ a {
     outline: none;
     background-color: rgb(234, 234, 234);
     padding-top: 3px;
+    padding-left: 16px;
 }
 .banner__input::-webkit-input-placeholder {
     padding-left: 20px;
